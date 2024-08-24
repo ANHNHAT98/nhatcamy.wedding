@@ -1130,4 +1130,53 @@ display: flex;
 {
    background-image: url(./image/bg.png);
 }
+/*Mobile*/
+
+
+@media (max-width: 740px) {
+    .header
+    {
+        display: none;
+    }
+    .header_list
+    {
+        display: none;
+    }
+
+    .header_name_saveofdate
+    {
+        font-size: 30px;
+        margin-right: 50px;
+       
+    }
+
+    .header_name_iconhim
+    {
+        margin-right: 60px;
+    }
+
+    .header_name_locaion
+    {
+        margin-right: 40px;
+    }
+
+    .slider_start
+    {
+        width: 100%;
+        height: 300px;
+    }
+
+    .slider_infor_headername
+    {
+        font-size: 30px;
+        margin-right: 50px;
+    }
+}
+
+/*PC*/
+
+@media (max-width: 1024px) {
+    
+}
+
 
