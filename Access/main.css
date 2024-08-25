@@ -755,8 +755,8 @@ html
 
 .slider_schedule_textheaderimgone
 {
-    width: 100px;
-    height: 100px;  
+    width: 300px;
+    height: 300px;  
 
 }
 
@@ -772,8 +772,8 @@ html
 
 .slider_schedule_textheaderimggirl
 {
-    width: 100px;
-    height: 100px;  
+    width: 200px;
+    height: 200px;  
      
 }
 
@@ -1318,6 +1318,7 @@ display: flex;
         width: 100px;
         height: 100px;
         margin-top: 10px;
+        margin-left: 10px;
     }
 
     .slider_schedule_textheadergirlboy
@@ -1357,7 +1358,7 @@ display: flex;
     .slider_schedule_textheadernool
     {
         margin-top: 30px;
-        margin-left: 50px;
+        margin-left: 60px;
     }
 
     .slider_schedule_imghim1
@@ -1368,12 +1369,15 @@ display: flex;
         margin-top: 10px;
 
     }
-    .slider_schedule_textheaderimgone
+
+    .slider_schedule_imghim1--note
     {
-    width: 100px;
-    height: 100px;  
-    margin-left: 10px;
+        width: 175px;
+        height: 320px;
+        margin-left: 0;
+        margin-top: 10px;
     }
+ 
     .slider_schedule_textheadertwo
    {
     margin-top: 10px;
