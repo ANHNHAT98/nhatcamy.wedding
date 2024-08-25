@@ -302,9 +302,10 @@ html
 
 .slider_infor_goom
 {
-    display: flex;
+    /*display: flex;*/
     margin-top: 40px;
     margin-left: 500px;
+    display: none;
 }
 
 .slider_infor_goomicon
@@ -493,7 +494,7 @@ html
     font-optical-sizing: auto;
     font-weight: 50;
     font-style: normal;
-    margin-top: 20px;
+    margin-top: 30px;
     list-style: none;
     text-transform: uppercase;
     display: flex;
@@ -528,9 +529,10 @@ html
 
 .slider_invitation_lettericon
 {
-    display: flex;
+    /*display: flex;*/
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 
@@ -1087,10 +1089,11 @@ display: flex;
 
 .slider_introduce_icon
 {
-    display: flex;
+    /*display: flex;*/
     justify-content: center;
     align-items: center;
     margin: 30px auto;
+    display: none;
 }
 
 .slider_introduce_iconimage
@@ -1198,8 +1201,9 @@ display: flex;
 
     .slider_infor_goom
     {
-        display: flex;
+        /*display: flex;*/
         margin-left: 57px;
+        display: none;
     }
 
     .slider_infor_detail1
@@ -1212,7 +1216,7 @@ display: flex;
     .slider_infor_image
     {
         width: 50%;
-        height: 300px;
+        height: 320px;
     }
     .slider_infor_text
     {
@@ -1550,6 +1554,7 @@ display: flex;
 {
     font-size: 2rem;
     margin-left: 10px;
+    margin-top: 10px;
 }
 .slider_invitation_letterimage
 {
