@@ -19,9 +19,12 @@ html
     background-color: #fff;
     margin-left: 40px;
     margin-bottom: 40px;
+ 
     
     
 }
+
+
 
 .header_list
 {
@@ -33,6 +36,12 @@ html
   
     
    
+}
+
+.header_item_link
+{
+    text-decoration: none;
+    color: #797979;
 }
 
 .header_item
@@ -293,6 +302,7 @@ html
 
 .slider_infor_goom
 {
+    display: flex;
     margin-top: 40px;
     margin-left: 500px;
 }
@@ -344,7 +354,6 @@ html
 {
     width: 300px;
     height: 400px;
-    border-radius: 4px;
     margin-top: 20px;
     box-shadow: 0 10px 20px -12px rgb(0 0 0 / 0.25);
     border-radius: 10px;
@@ -355,7 +364,6 @@ html
 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
-  font-size: 2.03333rem;
   color: #91b4bd;
   margin-top: 20px;
 }
@@ -730,6 +738,7 @@ html
     justify-content: center;
     align-items: center;
     margin-left: 100px;
+    margin-top: 10px;
    
    
     
@@ -745,8 +754,9 @@ html
 
 .slider_schedule_textheaderimgone
 {
-    width: 300px;
-    height: 300px;  
+    width: 100px;
+    height: 100px;  
+
 }
 
 .slider_schedule_textheadergirlboy
@@ -761,8 +771,8 @@ html
 
 .slider_schedule_textheaderimggirl
 {
-    width: 200px;
-    height: 200px;  
+    width: 100px;
+    height: 100px;  
      
 }
 
@@ -778,7 +788,7 @@ html
     display: inline-block;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-left: 150px;
 }
 
@@ -854,10 +864,7 @@ html
 .footer_img
 {
     margin-top: 10px;
-    position: relative;
-
-
-    
+    position: relative; 
 }
 
 .footer_img_thank
@@ -922,9 +929,6 @@ html
     font-weight: 100;
     color: rgb(139, 138, 138);
     font-style: italic;
-
-
-
 }
 
 .foooter_img_heart  
@@ -1130,13 +1134,28 @@ display: flex;
 {
    background-image: url(./image/bg.png);
 }
+
+.audio
+{
+   display: none;
+}
+  
+ 
+
+
 /*Mobile*/
 
 
 @media (max-width: 740px) {
+
+    .html
+    {
+        max-width: 740px;
+    }
     .header
     {
         display: none;
+       
     }
     .header_list
     {
@@ -1147,6 +1166,7 @@ display: flex;
     {
         font-size: 30px;
         margin-right: 50px;
+       
        
     }
 
@@ -1164,13 +1184,508 @@ display: flex;
     {
         width: 100%;
         height: 300px;
+        margin-top: 0;
     }
-
+    .slider_infor_header
+    {
+        margin-left: 20px;
+    }
     .slider_infor_headername
     {
         font-size: 30px;
-        margin-right: 50px;
+        margin-right: 20px;
     }
+
+    .slider_infor_goom
+    {
+        display: flex;
+        margin-left: 57px;
+    }
+
+    .slider_infor_detail1
+    {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+
+    }
+    .slider_infor_image
+    {
+        width: 50%;
+        height: 300px;
+    }
+    .slider_infor_text
+    {
+        width: 50%;
+        height: 320px;
+    }
+    .slider_infor_detail1
+    {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+
+    }
+    .slider_infor_textnote
+    {
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    .slider_infor_textnotedetail
+    {
+        font-size: 2rem;
+    }
+
+    .slider_infor_textnoteend
+    {
+      font-size: 1.5rem;
+      margin-left: 10px;
+      margin-top: 10px;
+      margin-right: 10px;
+      width: 200px;
+      line-height: 2rem;
+    }
+    .slider_infor_detail2
+    {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+
+    }
+
+    .slider_schedule_mastertext
+    {
+        font-size: 30px;
+    }
+
+    .slider_schedule_img
+    {
+        width: 50%;
+        height: 300px;
+        margin-left: 0;
+        margin-right: 10px;
+      
+    }
+    
+    .slider_schedule_imghim
+    {
+        width: 100%;
+        height: 240px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .slider_schedule_imghim2
+    {
+       
+        margin-left: 0;
+        height: 250px;
+        width: 210px;
+    }
+
+    .slider_schedule_textlabel
+    {
+        font-size: 1rem;
+        width: 180px;
+        height: 100px;
+        margin-top: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+        line-height: 2rem;
+    }
+
+    .slider_schedule_textheader
+    {
+        margin-left: 10px;
+        width: 200px;
+        height: 100px;
+        margin-top: 10px;
+    }
+
+    .slider_schedule_textheaderimg
+    {
+        width: 100px;
+        height: 100px;   
+        margin-top: 10px; 
+    }
+
+    .slider_schedule_textheaderimgone
+    {
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+    }
+
+    .slider_schedule_textheadergirlboy
+    {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+    .slider_schedule_textheaderimggirl
+    {
+        width: 100px;
+        height: 100px;
+    }
+    .slider_schedule_textheaderimgboy
+    {
+        width: 100px;
+        height: 100px;
+    }
+
+    .slider_schedule_textleft
+    {
+        margin-left: 0;
+        height: 580px;
+    }
+
+    .slider_schedule_textlabelleft
+    {
+        font-size: 1rem;
+        width: 200px;
+        height: 50px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        line-height: 2rem;
+    }
+
+    .slider_schedule_textheadernool
+    {
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+
+    .slider_schedule_imghim1
+    {
+        width: 210px;
+        height: 320px;
+        margin-left: 0;
+        margin-top: 10px;
+
+    }
+    .slider_schedule_textheaderimgone
+    {
+    width: 100px;
+    height: 100px;  
+    margin-left: 10px;
+    }
+    .slider_schedule_textheadertwo
+   {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+   }
+
+   .slider_schedule_textheaderimg--note
+   {
+    margin-top: 300px;
+   }
+
+   .slider_schedule_textlabel--note
+   {
+    margin-top: 200px;
+    height: 145px;
+   }
+
+   .slider_schedule_img-note
+   {
+    margin-left: 10px;
+   }
+
+   .heaader_name_first
+   {
+     display: none;
+
+   }
+   .header_list_line
+   {
+    display: none;
+   }
+   .header_name_location
+   {
+    display: none;
+   }
+
+   .header_name_icon
+   {
+    display: none;
+   }
+   .slider_introduce_text
+{
+    font-size: 30px;
+}
+.slider_schedule_masterlove
+{
+    
+    margin-bottom: 20px;
+}
+
+.slider_introduce_botitemlist
+{
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+.slider_introduce_boynoteheader
+{
+   
+    font-size: 1.5rem;
+
+
+}
+
+.slider_introduce_boynotedetal
+{
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 0;
+ 
+}
+
+
+.slider_introduce_boynote
+{
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+
+.slider_introduce_name
+{
+    margin-left: 20px;
+    line-height: 2rem;
+}
+
+.slider_introduce_boynotename
+{
+    font-size: 1rem;
+}
+
+.slider_introduce_boynotenameheader
+{
+    font-size: 1rem;
+}
+
+.slider_introduce_boydetail
+{
+    width: 400px;
+    height: 180px;   
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+ 
+}
+
+.slider_introduce_boynoteend
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.slider_introduce_boyimageicon
+{
+    width: 70x;
+    height: 70px;
+    top: 70%;
+    left: 70%;  
+}
+
+.slider_introduce_boyendline
+{
+    margin-top: 5px;
+
+}
+
+.slider_introduce_girldetail
+{
+    width: 400px;
+    height: 180px;   
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+ 
+}
+
+.slider_introduce_girlitemlist
+{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    margin-top: 50px;
+    margin-left: 10px;
+}   
+
+.slider_introduce_girlimageicon
+{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 70%;
+    right: 80%;
+    
+}
+
+.slider_introduce_boynoteend-bonus
+{
+    margin-left: 10px;
+}
+.slider_introduce_icon
+{
+    margin: 10px auto;
+}
+
+.slider_introduce_icon
+{
+    height: 100px;
+    width: 100px;
+}
+.slider_invitation_letterheader
+{
+    font-size: 30px;
+}
+.slider_invitation_letternote
+{
+    font-size: 2rem;
+    margin-left: 10px;
+}
+.slider_invitation_letterimage
+{
+    margin-left: 10px;
+    margin-top: 20px;
+   
+}
+.slider_invitation_letterimageone
+{
+    width: 25%;
+    height: 180px;
+    background-size: cover;
+    box-shadow: 0 10px 20px -12px rgb(0 0 0 / 0.25);
+}
+
+.slider_invitation_letterimagetwo
+{
+    width: 42%;
+    height: 160px; 
+}
+.slider_invitation_name
+{
+    font-size: 30px;
+}
+.slider_invitation_listiemiconimg
+{
+    width: 50px;
+    height: 50px;
+}
+.slider_invitation_item
+{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+.slider_invitation_date
+{
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.slider_invitation_location
+{
+    font-size: 0.7rem;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.slider_invitation_locationes
+{
+    font-size: 0.7rem;
+    margin-top: 10px;
+
+}
+.slider_invitation_map
+{
+    font-size: 1rem;
+    margin-top: 10px;
+    width: 100px;
+    height: 20px;
+    margin-right: 10px;
+    margin-left: 2px;
+
+
+}
+.slider_invitation_maplabel
+{
+    font-size: 1rem;
+    line-height: 1rem;
+    margin:10px 10px;
+    
+}
+.slider_invitation_image
+{
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.slider_invitation_schedule
+
+{
+    height: 400px;
+    margin-top: 20px; 
+}
+
+.slider_album_img
+{
+    margin-top: 20px;
+}
+.slider_album
+{
+    margin-top: 20px;
+}
+.slider_album_text
+{
+    font-size: 30px;
+}
+.slider_album_image
+{
+    width: 50px;
+    height: 50px;
+}
+.slider_album_slideone
+{ 
+    width: 50%;
+    height: 200px; 
+}
+.footer
+{
+    margin-top: 30px;
+}
+.footer_img_headerimg
+{
+    width: 80px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.footer_img_text
+{ 
+    margin-top: 10px;
+    font-size: 1rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+.foooter_img_heart  
+{
+    width: 30px ;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.footer_img_thank
+{
+    width: 100%;
+    height:calc(100vh - 300px);
+    background-size: cover;
+}
 }
 
 /*PC*/
@@ -1178,5 +1693,4 @@ display: flex;
 @media (max-width: 1024px) {
     
 }
-
 
