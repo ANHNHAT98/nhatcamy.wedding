@@ -606,7 +606,6 @@ html
 {
     margin-top: 100px;
    
- 
 }
 
 .slider_schedule_text
@@ -1237,7 +1236,7 @@ display: flex;
     }
     .slider_infor_textnotedetail
     {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .slider_infor_textnoteend
@@ -1260,6 +1259,7 @@ display: flex;
     .slider_schedule_mastertext
     {
         font-size: 30px;
+        margin-top: 10px;
     }
 
     .slider_schedule_img
@@ -1418,12 +1418,20 @@ display: flex;
    .slider_introduce_text
 {
     font-size: 30px;
+    margin-top: 30px;
 }
 .slider_schedule_masterlove
 {
     
     margin-bottom: 20px;
 }
+
+.slider_schedule_master
+{
+    margin-top: 30px;
+   
+}
+
 
 .slider_introduce_botitemlist
 {
@@ -1690,6 +1698,10 @@ display: flex;
     width: 100%;
     height:calc(100vh - 300px);
     background-size: cover;
+}
+.slider_introduce_bg
+{
+    height: 420px;
 }
 }
 
