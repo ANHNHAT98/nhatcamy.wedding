@@ -11,14 +11,44 @@ html
     font-family: "comfortaaregular", sans-serif;
 }
 
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideRight {
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes slideleft {
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes slideUp {
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .header
 {
     margin: 0px 0px;
     width: 100%;
-    height: 20px;
-    background-color: #fff;
-    margin-left: 40px;
-    margin-bottom: 40px;
+    height: 40px;
+    background-color: #fcfbfb;
  
     
     
@@ -33,29 +63,32 @@ html
     padding-top: 10px;
     align-items: center;
     text-align: center;
-  
-    
-   
+    margin-left: 40px;
+    margin-bottom: 50px;
+ 
 }
 
 .header_item_link
 {
     text-decoration: none;
-    color: #797979;
+   /* color: #797979;*/
+    padding-left: 70px;
+    margin-top: 10px;
+    color: #a88290;
+    font-family: 'Bellota Text', cursive;
+    font-style: oblique;
 }
 
 .header_item
 {
     list-style: none;
-    padding-left: 70px;
-    margin-top: 5px;
     color: #797979;
     transition: var(--trans, color .4s ease 0s);
     font-family: "comfortaaregular", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
-    margin-top: 10px;
+
 
   
     
@@ -66,14 +99,20 @@ html
     border-bottom: solid 2px rgb(190, 187, 184);
 }
 
+.heaader_name_first
+{
+
+    background-color: #fcfbfb;
+    display: none;
+}
 .header_name
 {
     font-size: 1.8rem;
     font-weight: 200;
     font-family: Arial, Helvetica, sans-serif;
-    height: 50px;
+    height: 200px;
     width: 100%;
-    margin-top: 40px;
+ 
   
 }
 
@@ -81,16 +120,70 @@ html
 
 {
     font-size: 60px;
-    color: #be8787;
-    font-family: "dancing_scriptregular", cursive;
+  /*  color: #be8787;
+    font-family: 'Baloo Paaji 2';*/
+    color: #a88290;
+    font-family: 'Bellota Text', cursive;
     font-optical-sizing: auto;
-    font-weight: 200;
+    font-weight: 100;
     font-style: normal;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: capitalize;
+     width: 100%;
+     height: 90px;
+     padding-top: 10px;
+     animation: jump 1s infinite;
+
+
 }
 
+
+.header_name_label
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.header_name_labelname
+{
+    color: #a88290;
+    /*color: #be8787;*/
+    font-family: 'Bellota Text', cursive;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-family: 'Bellota Text', cursive;
+    transform: translateY(100%);
+    animation: slideUp 5s forwards;
+
+}
+
+
+.header_name_label
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header_name_labelimg
+{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.span_heart
+{
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
 .header_name_div
 {
@@ -113,6 +206,7 @@ html
  
 }
 
+
 .header_name_logo
 {
     color: rgb(124, 12, 12);
@@ -126,15 +220,19 @@ html
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-left: 15px;
-    font-size: 36px;
-    color: #c9b1b1;
-    font-family: "dancing_scriptregular", cursive;
+    margin: 0px auto;
+    font-size: 5rem;
+    line-height: 60px;
+   /* font-family: "Baloo Paaji 2", cursive;*/
+    color: #a88290;
+    font-family: 'Bellota Text', cursive;
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
+    margin-left: 40px;
+    transform: translateX(-100%);
+    animation: jump 1s infinite;
+   
     
 }
 
@@ -143,16 +241,23 @@ html
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 30px;
     margin-top: 30px;
 }
 
 .header_name_iconhim
 {
-   height: 100px;
-   width:  100px;
-  
+   height: 70px;
+   width:  70px; 
 }
+
+.header_name_locationicon
+{
+    height: 50px;
+    width:  50px; 
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 
 .header_name_logoarrow
 {
@@ -164,14 +269,17 @@ html
 
 .slider_start
 {
-    margin-top: 10px;
-    padding-top: 20px;
+
     width: 100%;
-    height: 900px;
-    background-image: url(./image/KAH00798.jpg);
+    height: 1600px;
+    background-image: url(./image/z5791671502120_e435bfa236903a5174604631363d96e0.jpg);
     background-size: cover;
-    margin-top: 150px;
     box-shadow: 0 10px 20px -12px rgb(0 0 0 / 0.25);
+}
+
+.slider_infor
+{
+    margin-top: 50px;
 }
 
 .slider_infor_header
@@ -182,7 +290,6 @@ html
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
     color: #c9b1b1;
 }
 
@@ -192,8 +299,8 @@ html
 .slider_invitation
 {
     margin-top: 50px;
-    margin-left: 20px;
-    margin-right: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
    
 }
 
@@ -292,8 +399,7 @@ html
     width: 500px;
     height: 500px;
     margin-top: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-right: 30px;
    
 
 }
@@ -505,8 +611,8 @@ html
 
 .slider_invitation_letterimage
 {
-    margin-left: 30px;
-    margin-top: 40px;
+   
+    margin-top: 20px;
 }
 .slider_invitation_letterimageone
 {
@@ -518,8 +624,8 @@ html
 
 .slider_invitation_letterimagetwo
 {
-    width: 47%;
-    height: 550px;
+    width: 48%;
+    height: 600px;
     background-size: cover;
     margin-left: 10px;
     margin-right: 10px;
@@ -1185,7 +1291,7 @@ display: flex;
     .slider_start
     {
         width: 100%;
-        height: 300px;
+        height: 500px;
         margin-top: 0;
     }
     .slider_infor_header
@@ -1404,7 +1510,7 @@ display: flex;
    .heaader_name_first
    {
      display: none;
-
+   
    }
    .header_list_line
    {
@@ -1570,7 +1676,7 @@ display: flex;
 }
 .slider_invitation_letterimage
 {
-    margin-left: 10px;
+
     margin-top: 20px;
    
 }
@@ -1584,13 +1690,24 @@ display: flex;
 
 .slider_invitation_letterimagetwo
 {
-    width: 42%;
-    height: 160px; 
+    width: 43%;
+    height: 180px; 
+    background-size: cover;
+    box-shadow: 0 10px 20px -12px rgb(0 0 0 / 0.25);
 }
 .slider_invitation_name
 {
     font-size: 30px;
 }
+
+.slider_invitation_listiem
+{
+    float: left;
+    background-size: auto;
+    width: 50%;
+    text-align: center;
+}
+
 .slider_invitation_listiemiconimg
 {
     width: 50px;
@@ -1610,8 +1727,18 @@ display: flex;
 {
     font-size: 0.7rem;
     margin-top: 10px;
-    margin-bottom: 30px;
 }
+
+.slider_invitation_location--one
+{
+    margin-bottom: 10px;
+}
+.slider_invitation_location--two
+{
+    margin-bottom: 40px;
+}
+
+
 .slider_invitation_locationes
 {
     font-size: 0.7rem;
@@ -1621,13 +1748,16 @@ display: flex;
 .slider_invitation_map
 {
     font-size: 1rem;
-    margin-top: 10px;
     width: 100px;
     height: 20px;
     margin-right: 10px;
-    margin-left: 2px;
+    margin-left: 50px;
 
+}
 
+.slider_invitation_map--one
+{
+    margin-top: 0px;
 }
 .slider_invitation_maplabel
 {
@@ -1639,14 +1769,14 @@ display: flex;
 .slider_invitation_image
 {
     width: 100%;
-    height: 200px;
+    height: 300px;
     border-radius: 4px;
     margin-top: 10px;
 }
 .slider_invitation_schedule
 
 {
-    height: 400px;
+    height: 1000px;
     margin-top: 20px; 
 }
 
