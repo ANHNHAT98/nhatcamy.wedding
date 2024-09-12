@@ -943,14 +943,62 @@ html
 .slider_album_slide
 {
    display: flex;
+   margin-left: 20px;
+   margin-right: 20px;
 
 }
+
 .slider_album_slideone
 {
     background-size: cover;
-    width: 50%;
-    height: 400px;
+    width: 20%;
+    height: auto;
+    margin-right: 20px;
     
+}
+
+.slider_album_slidetwo
+{
+    background-size: cover;
+    width: 55%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.slider_album_slidethree
+{
+    background-size: cover;
+    width: 55%;
+    height: auto;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.slider_album_slidefour
+{
+    background-size: cover;
+    width: 20%;
+    height: auto;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.slider_album_slidefive
+{
+    background-size: cover;
+    width: 48%;
+    height: auto;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.slider_album_slidesix
+{
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
 .footer_thank
